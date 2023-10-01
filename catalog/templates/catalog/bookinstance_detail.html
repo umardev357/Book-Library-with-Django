@@ -1,0 +1,21 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>Title: {{ bookinstance.book.title }}</h1>
+
+  <p><strong>id:</strong> <a href="{{ bookinstance.book.get_absolute_url }}">{{ bookinstance.id }}</a></p>
+  <!-- author detail link not yet defined
+  <p><strong>Status:</strong> {{ bookinstance.status }}</p>
+  <p><strong>Borrower:</strong> {{ bookinstanbook.borrower }}</p>
+  <p><strong>Return Date:</strong> {{ bookinstance.due_back }}</p>
+  <p><strong>Genre:</strong> {{ book.genre.all|join:", " }}</p> -->
+
+  <p><strong>Status:</strong> {{ bookinstance.status }}</p>
+  <p><strong>Borrower:</strong> {{ bookinstancebook.borrower }}</p>
+  <p><strong>Return Date:</strong> {{ bookinstance.due_back }}</p>
+
+
+
+ 
+
+{% endblock %}
